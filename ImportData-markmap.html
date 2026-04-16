@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"DV Tool","children":[{"content":"Data Management","children":[{"content":"Import Data","children":[{"content":"Architecture Overview","children":[{"content":"DV (UI)","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"DV.Core (Data Models)","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"DV.GrpcService (Communication)","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"DV.WS.Processing (Windows Service)","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"DV.Lcms (FIS Processing)","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"DV.Ladybug (Video Processing)","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"h4","lines":"7,8"}},{"content":"Dialog Components","children":[{"content":"ProcessingDialog (%)","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"ProcessLogsDialog (Results)","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"RestoringDialog (Rollback)","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"h4","lines":"15,16"}},{"content":"Handle Survey Processing","children":[{"content":"Config Validation","children":[],"payload":{"tag":"h5","lines":"21,22"}},{"content":"Backup Management","children":[],"payload":{"tag":"h5","lines":"22,23"}},{"content":"File Selection (.FIS, .XML, .PGR)","children":[],"payload":{"tag":"h5","lines":"23,24"}},{"content":"CancellationToken Initialisation","children":[],"payload":{"tag":"h5","lines":"24,25"}},{"content":"Process Survey","children":[{"content":"Save CFG file","children":[],"payload":{"tag":"h6","lines":"26,27"}},{"content":"Calibration File Setup","children":[],"payload":{"tag":"h6","lines":"27,28"}},{"content":"Notify UI Processing State","children":[],"payload":{"tag":"h6","lines":"28,29"}},{"content":"Initialize Processing Dialog","children":[],"payload":{"tag":"h6","lines":"29,30"}},{"content":"Start Processing State Listener Thread","children":[],"payload":{"tag":"h6","lines":"30,31"}},{"content":"Invoke gRPC ProcessSurvey Call","children":[],"payload":{"tag":"h6","lines":"31,32"}},{"content":"Handle Streaming Responses","children":[{"content":"Logs","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Errors","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Coordinates","children":[],"payload":{"tag":"li","lines":"35,36"}}],"payload":{"tag":"h6","lines":"32,33"}},{"content":"Update Map Coordinates","children":[],"payload":{"tag":"h6","lines":"36,37"}},{"content":"Stop State Listener","children":[],"payload":{"tag":"h6","lines":"37,38"}},{"content":"Handle Cancellation Exception","children":[],"payload":{"tag":"h6","lines":"38,39"}},{"content":"Set Processing Time Metrics","children":[],"payload":{"tag":"h6","lines":"39,40"}}],"payload":{"tag":"h5","lines":"25,26"}}],"payload":{"tag":"h4","lines":"20,21"}}],"payload":{"tag":"h3","lines":"5,6"}}],"payload":{"tag":"h2","lines":"3,4"}}],"payload":{"tag":"h1","lines":"1,2"}},null)</script>
+</body>
+</html>
